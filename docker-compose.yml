@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  tor:
+    image: alpine:latest
+    container_name: tor_on_docker
+    restart: "no"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "127.0.0.1:9050:9050/tcp"
+      - "127.0.0.1:53:5353/udp"
+    volumes:
+      - ./conf:/etc/tor/
