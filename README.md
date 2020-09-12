@@ -1,4 +1,4 @@
-# tor-docker
+# tor-on-docker
 
 Assume to use docker-compose.
 
