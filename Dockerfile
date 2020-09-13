@@ -8,4 +8,4 @@ RUN chown -Rh tor /var/lib/tor
 
 EXPOSE 5353/udp 9050/tcp
 
-ENTRYPOINT ["tor", "-f", "/etc/tor/torrc"]
+# ENTRYPOINT ["tor", "-f", "/etc/tor/torrc"]
